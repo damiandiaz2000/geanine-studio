@@ -1,0 +1,134 @@
+/* Variables de color basadas en la imagen de referencia */
+:root {
+    --nude-claro: #f5eee6;
+    --nude-medio: #e3d5ca;
+    --texto-oscuro: #5e503f;
+    --dorado-suave: #d4a373;
+    --blanco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--nude-claro);
+    color: var(--texto-oscuro);
+    line-height: 1.6;
+}
+
+/* Navegación */
+header {
+    background-color: var(--blanco);
+    padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-style: italic;
+    font-weight: normal;
+    color: var(--dorado-suave);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto-oscuro);
+    font-weight: 400;
+}
+
+.btn-cita {
+    background-color: var(--dorado-suave);
+    color: var(--blanco) !important;
+    padding: 10px 22px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-cita:hover {
+    background-color: var(--texto-oscuro);
+}
+
+/* Sección Hero */
+.hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(245, 238, 230, 0.8), rgba(227, 213, 202, 0.5));
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+/* Servicios */
+.services {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.services h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--blanco);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--nude-medio);
+    padding: 40px 5%;
+    text-align: center;
+    margin-top: 50px;
+}
